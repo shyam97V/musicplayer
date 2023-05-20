@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/expense.css">
+  
+
+</head>
+<body>
+<h1>hello u r succesfully loged in</h1>
+<button type="button" onclick="logout()">Logout</button>
+
+<div id="root">
+
+</div>
+
+<div class="container-fluid">
+    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
+       Add expense
+      </button>
+</div>
+
+  
+  <!-- Modal -->
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">expense details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form id="expform">
+                <div>
+                    <input type="text" name="name" placeholder="Name" >
+                </div>
+                <div>
+                    <input type="text" name="desc" placeholder="Description" >
+                </div>
+                <div>
+                    <input type="text" name="amount" placeholder="Amount" >
+                </div>
+                <div>
+                    <input type="text" name="transactionDetails" placeholder="transactionDetails" >
+                </div>
+                <div>
+                    <input type="text" name="transactionAmount"  placeholder="transaction Amount">
+                </div>
+                <div>
+                    <input type="text" name="type"  placeholder="Type">
+                </div>
+                <div><button id="btn" type="submit">Submit</button></div>
+            </form>
+              
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- //////modal 2/// -->
+
+  <div class="modal fade" id="updateExpModal" tabindex="-1" role="dialog" aria-labelledby="updateExpModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title " id="exampleModalLabel">expense details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form id="updateform">
+                <div>
+                    <input type="text" name="name" placeholder="Name" >
+                </div>
+                <div>
+                    <input type="text" name="desc" placeholder="Description" >
+                </div>
+                <div>
+                    <input type="text" name="amount" placeholder="Amount" >
+                </div>
+                <div>
+                    <input type="text" name="transactionDetails" placeholder="transactionDetails" >
+                </div>
+                <div>
+                    <input type="text" name="transactionAccount"  placeholder="transaction Amount">
+                </div>
+                <div>
+                    <input type="text" name="type"  placeholder="Type">
+                </div>
+                <div><button id="btn" type="submit">Submit</button></div>
+            </form>
+              
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="../js/expense.js"></script>
+
+</html>
